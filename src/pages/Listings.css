@@ -1,0 +1,150 @@
+.listings-page {
+  min-height: 80vh;
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.listings-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.listings-header h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.listings-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+.filters-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  align-items: flex-end;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.filter-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #2ecc71;
+  pointer-events: none;
+}
+
+.search-input {
+  padding-left: 40px;
+  padding: 12px;
+  padding-left: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  transition: border 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.3);
+}
+
+.filter-group .input-field {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.filter-group .input-field:focus {
+  outline: none;
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.3);
+}
+
+.reset-btn {
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.listings-results {
+  min-height: 400px;
+}
+
+.results-info {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border-left: 4px solid #2ecc71;
+}
+
+.results-info p {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.no-results {
+  background: white;
+  padding: 60px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.no-results p {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.no-results .btn-primary {
+  padding: 12px 30px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .listings-header h1 {
+    font-size: 28px;
+  }
+
+  .filters-section {
+    grid-template-columns: 1fr;
+  }
+
+  .listings-grid {
+    grid-template-columns: 1fr;
+  }
+}
